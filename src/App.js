@@ -14,19 +14,20 @@ const App = () => {
   
   return (
     <header>
-    <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/kontak" element={<Kontak />} />
+      <div>
+        <Router>
+          <Navbar />
+          <Routes>
           <Route path="/myreact" element={<MyReact />} />
-        </Routes>
-      </Router>
-    </div>  
+            {/* <Route path="/" element={<Welcome />} /> */}
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/kontak" element={<Kontak />} />
+            <Route path="/myreact" element={<MyReact />} /> */}
+          </Routes>
+        </Router>
+      </div>  
     </header>
   );
 };
